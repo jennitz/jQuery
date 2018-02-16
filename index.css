@@ -1,0 +1,39 @@
+body {
+  background-color: #DCDCDC;
+  font-family: courier;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container div {
+  display: flex;
+  font-family: courier;
+  background-color: #8FBC8F;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  width: 25%;
+  height: 100px;
+  border-radius: 50%;
+}
+
+form {
+  background-color: inherit body;
+  color: inherit body;
+  box-shadow: 10px 10px 5px grey;
+
+}
+
+/* .container div hover over #228B22 (forest green)
+.container div reserved #696969 (dim grey) */
