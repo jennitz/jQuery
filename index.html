@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>jQuery Lab</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -21,9 +21,13 @@
       <div>9</div>
     </div>
     <form action=''>
-      <input type='text' placeholder='Name'><br>
-      <input type='tel' placeholder='XXX-XXX-XXXX'><br>
-      <input type='number' placeholder='# of seats'
+      <h3>Reserve this table:</h3><br />
+      Name:
+      <input type='text' placeholder='Your name' size='50' required><br />
+      Phone#:
+      <input type='tel' placeholder='XXX-XXX-XXXX' size='15' required><br />
+      Seats:
+      <input type='number' placeholder='0' min='0' max='10' required><br /><br />
       <input type="submit" value="Submit">
     </form>
     <script src='//code.jquery.com/jquery-3.3.1.js'></script>
