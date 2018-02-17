@@ -1,10 +1,10 @@
 body {
-  background-color: #DCDCDC;
+  background-color: #DCDCDC; /* gainsboro */
   font-family: courier;
   margin-bottom: 50px;
 }
 
-h1, h3 {
+h1 {
   color: chocolate;
   text-align: center;
 }
@@ -14,25 +14,44 @@ h2 {
   margin-bottom: 50px;
 }
 
+h3 {
+  color: #228B22; /* forestgreen */
+  text-align: center;
+}
+
 .container {
+  max-width: 550px;
+  margin: auto;
+  border: 2px solid white;
+  padding: 15px;
+}
+
+.row {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
-.container div {
+.row div {
   display: flex;
   font-family: courier;
-  background-color: #8FBC8F;
+  background-color: #8FBC8F; /* darkseagreen */
   color: white;
   align-items: center;
   justify-content: center;
   margin: 15px;
-  width: 25%;
+  width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.row div:hover {
+  background-color: #228B22; /* forestgreen*/
+}
+
+.row .reserved {
+  background-color: #696969;
+  pointer-events: none;
 }
 
 form {
@@ -44,15 +63,38 @@ form {
   font-family: inherit;
   color: inherit;
   width: 100%;
-  height: 50%;
   margin-top: 20px;
   margin-bottom: 50px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 2px 2px 2px 2px grey;
+  position: absolute;
+  top: 200px;
 }
 
-#number {
+input {
+  font-size: 80%;
+  font-family: inherit;
+  height: 30px;
+}
+
+#seats {
   width: 3em;
 }
-/* .container div hover over #228B22 (forest green)
-.container div reserved #696969 (dim grey) */
+
+#submit, #cancelbtn {
+  margin: 5px;
+  background-color: #8FBC8F; /* darkseagreen */
+  height: 50px;
+  width: 90px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#submit:hover, #cancelbtn:hover {
+  cursor: pointer;
+  color: #228B22; /* forestgreen */;
+  border-radius: 5px;
+  transform: scale(1.5) perspective(1px);
+}
+
+/* https://repl.it/repls/DarkcyanBasicDirectories */
