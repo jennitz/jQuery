@@ -37,9 +37,10 @@ h3 {
   font-family: courier;
   background-color: #8FBC8F; /* darkseagreen */
   color: white;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 15px;
+  margin: 25px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -47,42 +48,57 @@ h3 {
 
 .row div:hover {
   background-color: #228B22; /* forestgreen*/
+  cursor: pointer;
 }
 
 .row .reserved {
-  background-color: #696969;
+  background-color: #696969; /* dimgrey */
+  cursor: not-allowed;
   pointer-events: none;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: inherit;
+/* .reserved:hover {
+  cursor: pointer;
+} */
+
+.formdiv {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+}
+
+.form {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #DCDCDC; /* gainsboro */
   font-family: inherit;
   color: inherit;
-  width: 100%;
-  margin-top: 20px;
+  width: 55%;
+  /* margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px; */
   margin-bottom: 50px;
   padding: 20px;
   box-shadow: 2px 2px 2px 2px grey;
-  position: absolute;
-  top: 200px;
+  /* position: absolute;
+  top: 200px; */
 }
 
 input {
   font-size: 80%;
   font-family: inherit;
   height: 30px;
+  margin: 0 auto;
 }
 
 #seats {
   width: 3em;
 }
 
-#submit, #cancelbtn {
-  margin: 5px;
+#reservebtn, #cancelbtn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
   background-color: #8FBC8F; /* darkseagreen */
   height: 50px;
   width: 90px;
@@ -90,11 +106,21 @@ input {
   font-size: inherit;
 }
 
-#submit:hover, #cancelbtn:hover {
+#reservebtn:hover, #cancelbtn:hover {
+  display: block;
+  text-align: center;
   cursor: pointer;
   color: #228B22; /* forestgreen */;
   border-radius: 5px;
   transform: scale(1.5) perspective(1px);
+}
+
+p {
+  margin: 0 auto;
+  padding: 3px;
+  background-color: white;
+  color: black;
+  font-family: inherit;
 }
 
 /* https://repl.it/repls/DarkcyanBasicDirectories */

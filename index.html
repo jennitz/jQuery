@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Table Finder</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1>Table Finder</h1>
-    <h2>Pick your table now</h2>
-    <div class='container'>
-      <div class="row">
-        <div class='available'>1</div>
-        <div class='available'>2</div>
-        <div class='available'>3</div>
-      </div>
-      <div class="row">
-        <div class='available'>4</div>
-        <div class='available'>5</div>
-        <div class='available'>6</div>
-      </div>
-      <div class="row">
-        <div class='available'>7</div>
-        <div class='available'>8</div>
-        <div class='available'>9</div>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Table Finder</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>Table Finder</h1>
+  <h2>Pick your table now</h2>
+  <div class='container'>
+    <div class="row">
+      <div class='available'>1<br /><p></p></div>
+      <div class='available'>2<br /><p></p></div>
+      <div class='available'>3<br /><p></p></div>
     </div>
-    <form action=''>
+    <div class="row">
+      <div class='available'>4<br /><p></p></div>
+      <div class='available'>5<br /><p></p></div>
+      <div class='available'>6<br /><p></p></div>
+    </div>
+    <div class="row">
+      <div class='available'>7<br /><p></p></div>
+      <div class='available'>8<br /><p></p></div>
+      <div class='available'>9<br /><p></p></div>
+    </div>
+  </div>
+  <div class='formdiv'>
+    <div class='form'>
       <h1>New Reservation:</h1>
       <h3 id='table'></h3><br />
-      Name
-      <input type='text' placeholder='Your name' size='50' id='name' required><br />
-      Phone#
-      <input type='tel' placeholder='XXX-XXX-XXXX' size='50' id='phone' required><br />
-      Seats
-      <input type='number' placeholder='0' min='0' max='10' id='seats' required><br /><br />
-      <input type='submit' id='submit'>
+      Name<br />
+      <input type='text' placeholder='Customer name' size='50' id='name'><br /><br />
+      Phone#<br />
+      <input type='tel' placeholder='XXX-XXX-XXXX' size='50' id='phone'><br /><br />
+      Seats<br />
+      <input type='number' placeholder='0' min='0' max='10' id='seats'><br /><br />
+      <button id='reservebtn'>Reserve</button>
       <button id='cancelbtn'>Cancel</button>
-    </form>
-    <script src='//code.jquery.com/jquery-3.3.1.js'></script>
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </div>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
 </html>

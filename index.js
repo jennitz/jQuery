@@ -1,31 +1,36 @@
 $(document).ready(() => {
-  $('form').hide();
+  $('.form').hide();
   var currentTable;
+  $('p').hide();
 
 
   $('.row').on('click', '.available', function(){
     var tableNum = $(this).text();
     currentTable = $(this);
     $('#table').html(`Table Number ${tableNum}`);
-    $('form').fadeToggle('slow');
+    $('.form').fadeToggle('slow');
   });
 
 
   $('#cancelbtn').on('click', function(){
-    $('form').hide();
+    $('.form').hide();
   });
 
-  $('#submit').on('click', function(){
-    // var name = $('#name').val();
+  $('#reservebtn').on('click', function(){
+    var name = $('#name').val();
     // var phone = $('#phone').val();
-    // var seats = $('#seats').val();
-
+    var seats = $('#seats').val();
     currentTable.attr('class', 'reserved');
-    $('form').hide();
-    // currentTable.unbind('hover');
-    // $
+    $('.form').hide();
+    // currentTable.attr('p', `Name: ${name}`<br />`Party Size: ${seats}`);
+    $('p').show();
   });
-  // if (table is reserved){
-  //   click & hover disabled and .css('background-color', '#696969')
-  // }
+
+  // $('.reserved').on('hover', function(){
+  //   // $(this).unbind('cursor');
+  //   //how to specify currentTable's <p>?
+  //   $('p').text(`Name: ${name}`<br />`Party Size: ${seats}`);
+  //   $('p').fadeToggle('slow');
+  // });
+
 });
