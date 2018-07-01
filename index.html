@@ -11,34 +11,43 @@
   <h2>Pick your table now</h2>
   <div class='container'>
     <div class="row">
-      <div class='available'>1<br /><p></p></div>
-      <div class='available'>2<br /><p></p></div>
-      <div class='available'>3<br /><p></p></div>
+      <div class='available' id='1'>1<br /></div>
+      <div class='available' id='2'>2<br /></div>
+      <div class='available' id='3'>3<br /></div>
     </div>
     <div class="row">
-      <div class='available'>4<br /><p></p></div>
-      <div class='available'>5<br /><p></p></div>
-      <div class='available'>6<br /><p></p></div>
+      <div class='available' id='4'>4<br /></div>
+      <div class='available' id='5'>5<br /></div>
+      <div class='available' id='6'>6<br /></div>
     </div>
     <div class="row">
-      <div class='available'>7<br /><p></p></div>
-      <div class='available'>8<br /><p></p></div>
-      <div class='available'>9<br /><p></p></div>
+      <div class='available' id='7'>7<br /></div>
+      <div class='available' id='8'>8<br /></div>
+      <div class='available' id='9'>9<br /></div>
     </div>
   </div>
-  <div class='formdiv'>
-    <div class='form'>
-      <h1>New Reservation:</h1>
-      <h3 id='table'></h3><br />
-      Name<br />
+  <div id='reservationdiv' class='hidden'>
+    <form class='form' action='#' id='contact'>
+      <h1>New Reservation</h1>
+      <h3 id='table-text'>Table Number:
+        <h3 id='table-number'></h3>
+      </h3>
+      <br />
+      Name:
+      <br />
       <input type='text' placeholder='Customer name' size='50' id='name'><br /><br />
-      Phone#<br />
+      <br />
+      Phone#:
+      <br />
       <input type='tel' placeholder='XXX-XXX-XXXX' size='50' id='phone'><br /><br />
-      Seats<br />
+      <br />
+      # of Seats:
+      <br />
       <input type='number' placeholder='0' min='0' max='10' id='seats'><br /><br />
-      <button id='reservebtn'>Reserve</button>
+      <br />
       <button id='cancelbtn'>Cancel</button>
-    </div>
+      <button id='reservebtn'>Reserve</button>
+    </form>
   </div>
   <script
   src="http://code.jquery.com/jquery-3.3.1.js"
